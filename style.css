@@ -1,0 +1,13 @@
+.main-div {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+.list-group li {
+    box-shadow: 0 0 6px 3px #eee;
+    display: inline;
+    margin: 10px auto;
+    padding: 5px 10px;
+}

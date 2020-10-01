@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App with Firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyB9nVYzDS_p4E-t7LWH1szkmwtOV5FfyRs",
+          authDomain: "todo-app-with-firebase-f2cb2.firebaseapp.com",
+          databaseURL: "https://todo-app-with-firebase-f2cb2.firebaseio.com",
+          projectId: "todo-app-with-firebase-f2cb2",
+          storageBucket: "todo-app-with-firebase-f2cb2.appspot.com",
+          messagingSenderId: "340847553042",
+          appId: "1:340847553042:web:3a770f132044e5f26dc6cb",
+          measurementId: "G-XYD5CZTQBY"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+      </script>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href="./inc/css/bootstrap.min.css">
+  
+
+
+    
+</head>
+
+<body>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12 text-center">
+                <h1>Todo App with Firebase</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="todo-section my-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12 text-center">
+                <div class="main-div">
+                    <form>
+                        <input id="todo-text" class=""  type="text" placeholder="Enter text Here">
+                        <button id="add-todo" class="btn btn-success" type="button" onclick="addtodo()" >Add Todo</button>
+                        <button id="del-todo" class="btn btn-danger"  type="button" onclick="deleteAll()" >Delete All Todo</button>
+                    </form>
+            
+                   <ul id="list" class="my-2 list-group">
+                   </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="./inc/js/jquery-3.4.1.min.js"  type="text/javascript"></script>  
+  <script src="./inc/js/bootstrap.min.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
